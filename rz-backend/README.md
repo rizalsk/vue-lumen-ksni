@@ -62,12 +62,17 @@ This is a Lumen App based on [Lumen Framework](https://lumen.laravel.com/docs/10
 		
 	```
 
-3. Generate key baru untuk aplikasi.
+1. Generate key baru untuk aplikasi.
 	```
 	php artisan key:generate
 	```
 
-4. Jalankan local server.
+1. Migrasi database dan seeder table.
+	```
+	php artisan migrate:fresh --seed
+	```
+
+1. Jalankan local server.
    
 	```
 	php -S localhost:8000 -t public
